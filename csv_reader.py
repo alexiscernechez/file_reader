@@ -17,7 +17,7 @@ class FileHandler:
 	"""docstring for FileHandler"""
 
 	def create_dict(file_location):
-		compiled_list = csv.reader(open(file_location, 'r'))
+		compiled_list = csv.reader(open(file_location, 'r',errors='ignore'))
 
 		dict_list = {}
 		key = 0
